@@ -1,0 +1,19 @@
+{
+	"open": {
+		"name": "open",
+		"version": "1.0.0",
+		"cmd": {
+			"open": "open",
+			"op": "open",
+			"opu": "open -u",
+			"download": "download",
+			"dl": "download"
+		},
+		"arg": {
+			"git": "https://github.com",
+			"gg": "https://google.com"
+		},
+		"prop": ["brower=chrome","edit=notpad"],
+		"describe":"-h:显示帮助\r\n-u:打开网页\r\n-f:打开文件或者文件夹\r\n-e:执行"
+	}
+}
