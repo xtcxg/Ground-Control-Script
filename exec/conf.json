@@ -1,0 +1,16 @@
+{
+	"exec": {
+		"name": "exec",
+		"version": "1.0.0",
+		"cmds": {
+			"exec": "exec"
+		},
+		"args": {
+			"word": "word",
+			"excel": "",
+            "brower": ""
+		},
+		"props": ["brower=chrome"],
+		"describe":""
+	}
+}
