@@ -29,3 +29,11 @@
 > -b : 执行.bat脚本
 
 > -n : -n或不加参数，使用powershell执行后续命令 （exec java D:\Main.class 实际为使用powershell运行 java D:\Main.class）
+
+## sys
+系统操作
+> reboot : 重启
+
+> sleep : 休眠
+
+> shutdown : 关机
