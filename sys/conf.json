@@ -1,0 +1,15 @@
+{
+	"open": {
+		"name": "sys",
+		"version": "1.0.0",
+		"cmds": {
+			"reboot": "reboot",
+			"sleep": "sleep",
+			"stop": "stop"
+		},
+		"args": {
+		},
+		"props": [],
+		"describe":"系统操作:\r\nreboot:重启\r\nsleep:睡眠\r\nstop:停止"
+	}
+}
