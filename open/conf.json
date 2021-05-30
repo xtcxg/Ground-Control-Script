@@ -2,18 +2,19 @@
 	"open": {
 		"name": "open",
 		"version": "1.0.0",
+		"type":"",
 		"cmds": {
 			"open": "open",
 			"op": "open",
 			"opu": "open -u",
-			"download": "download",
-			"dl": "download"
+			"word": "open -e word"
 		},
 		"args": {
 			"git": "https://github.com",
-			"gg": "https://google.com"
+			"gg": "https://google.com",
+			"baidu": "https://www.baidu.com"
 		},
-		"props": ["brower=chrome","edit=notpad"],
-		"describe":"-h:显示帮助\r\n-u:打开网页\r\n-f:打开文件或者文件夹\r\n-e:执行"
+		"props": ["brower=chrome","edit=notpad,preset=word,excel,onenote,brower,edge"],
+		"describe":"打开网址/程序/文件\r\n-h:显示帮助\r\n-u:打开网页\r\n-f:打开文件或者文件夹"
 	}
 }

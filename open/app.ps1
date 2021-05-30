@@ -16,26 +16,19 @@ if (([string]$ags[$ags.Length - 1]) -match "^\[\[\[.*\]\]\]$" )
     
 }
 
-Write-Host ">> 最终: $ags"
-for ($i = 0; $i -lt $ags.Count; $i++) {
-    if ($ags[$i].Equals("-u")) 
-    {
-        Start-Process -FilePath $ags[$i+1];
-        break;
-    }
-    if ($ags[$i].Equals("-f"))
-    {
-        Write-Host ">> 打开文件";
-        break;
-    }
-}
-
-
-function createProp  
+Write-Host ">> final:"$ags[0]
+# 打开网页
+if ($ags[0].Equals("-u"))
 {
-    param([string]$data) 
-    Write-Host ">> 处理prop: $data"
-    $data = $data.Substring(3,$data.Length-3);
-    [stirng[]] $array = $data.Split("+++");
-    retrun $array;
-} 
+    #todo 选择浏览器
+    Write-Host ">> 打开网址";
+    Start-Process -FilePath $ags[1];
+    break;
+}
+# 打开应用
+if ($ags[0].Equals("-e"))
+{
+    Write-Host ">> 打开程序";
+    #Start-Process -FilePath ($Env:WinDir + "\explorer.exe") -ArgumentList "shell:Appsfolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+    Start-Process -FilePath $ags[1];
+}
