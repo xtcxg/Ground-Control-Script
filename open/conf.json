@@ -15,6 +15,6 @@
 			"baidu": "https://www.baidu.com"
 		},
 		"props": ["brower=chrome","edit=notpad,preset=word,excel,onenote,brower,edge"],
-		"describe":"打开网址/程序/文件\r\n-h:显示帮助\r\n-u:打开网页\r\n-f:打开文件或者文件夹"
+		"describe":"打开网址/程序/文件,路径中存在空格，可以使用\"path\"包裹。\r\n-h:显示帮助\r\n-u:打开网页\r\n-f:打开文件或者文件夹"
 	}
 }
